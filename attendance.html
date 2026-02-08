@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>九州｜考勤</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page">
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <a class="logo-link" href="index.html">九州</a>
+
+      <div class="nav">
+        <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
+        <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
+        <a href="members.html" data-i18n data-zh="成员" data-en="Members">成员</a>
+        <a href="attendance.html" data-i18n data-zh="考勤" data-en="Attendance">考勤</a>
+        <a href="journey.html" data-i18n data-zh="征程" data-en="Journey">征程</a>
+        <a href="points.html" data-i18n data-zh="贡献/积分" data-en="Points">贡献/积分</a>
+        <a href="redeem.html" data-i18n data-zh="兑换" data-en="Redeem">兑换</a>
+      </div>
+
+      <div class="lang">
+        <button id="btn-zh" class="active">中文</button>
+        <button id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="container main">
+    <div class="card">
+      <h1 data-i18n data-zh="考勤" data-en="Attendance">考勤</h1>
+      <p class="hint" data-i18n
+         data-zh="选择赛季后可查看全员考勤；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。"
+         data-en="Select a season to view attendance. Search your in-game name (e.g., 九州丨奉孝) to find your record fast.">
+        选择赛季后可查看全员考勤；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="controls">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+          <select id="att-season" class="select"></select>
+          <span id="att-archive-hint" class="hint"></span>
+        </div>
+
+        <input id="att-search"
+               class="input"
+               data-i18n-placeholder
+               data-zh-placeholder="搜索：输入你的游戏名…"
+               data-en-placeholder="Search your in-game name…"
+               placeholder="搜索：输入你的游戏名…" />
+      </div>
+
+      <div style="margin-top:14px; overflow:auto;">
+        <table class="table">
+          <thead>
+            <tr>
+              <th data-i18n data-zh="成员" data-en="Member">成员</th>
+              <th data-i18n data-zh="出勤" data-en="Attendance">出勤</th>
+              <th data-i18n data-zh="比例" data-en="Rate">比例</th>
+              <th data-i18n data-zh="备注" data-en="Note">备注</th>
+            </tr>
+          </thead>
+          <tbody id="att-body"></tbody>
+        </table>
+      </div>
+
+      <div id="att-empty" class="hint" style="display:none;"></div>
+    </div>
+  </main>
+
+  <footer class="footer">© 九州</footer>
+  <script src="main.js"></script>
+</body>
+</html>
