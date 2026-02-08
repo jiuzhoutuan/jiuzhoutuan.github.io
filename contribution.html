@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>九州｜考勤</title>
+  <title>九州｜贡献</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="page">
@@ -30,22 +30,23 @@
 
   <main class="container main">
     <div class="card">
-      <h1 data-i18n data-zh="考勤" data-en="Attendance">考勤</h1>
-      <p class="hint" data-i18n
-         data-zh="选择赛季后可查看全员考勤；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。"
-         data-en="Select a season to view attendance. Search your in-game name (e.g., 九州丨奉孝) to find your record fast.">
-        选择赛季后可查看全员考勤；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。
+      <h1 data-i18n data-zh="贡献" data-en="Contribution">贡献</h1>
+      <p class="hint"
+         data-i18n
+         data-zh="选择赛季后可查看全员贡献；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。"
+         data-en="Select a season to view contributions. Search your in-game name (e.g., 九州丨奉孝) to find your record fast.">
+        选择赛季后可查看全员贡献；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。
       </p>
     </div>
 
     <div class="card">
       <div class="controls">
         <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-          <select id="att-season" class="select"></select>
-          <span id="att-archive-hint" class="hint"></span>
+          <select id="con-season" class="select"></select>
+          <span id="con-archive-hint" class="hint"></span>
         </div>
 
-        <input id="att-search"
+        <input id="con-search"
                class="input"
                data-i18n-placeholder
                data-zh-placeholder="搜索：输入你的游戏名…"
@@ -58,16 +59,16 @@
           <thead>
             <tr>
               <th data-i18n data-zh="成员" data-en="Member">成员</th>
-              <th data-i18n data-zh="出勤" data-en="Attendance">出勤</th>
-              <th data-i18n data-zh="比例" data-en="Rate">比例</th>
+              <th data-i18n data-zh="贡献" data-en="Contribution">贡献</th>
+              <th data-i18n data-zh="等级" data-en="Tier">等级</th>
               <th data-i18n data-zh="备注" data-en="Note">备注</th>
             </tr>
           </thead>
-          <tbody id="att-body"></tbody>
+          <tbody id="con-body"></tbody>
         </table>
       </div>
 
-      <div id="att-empty" class="hint" style="display:none;"></div>
+      <div id="con-empty" class="hint" style="display:none;"></div>
     </div>
   </main>
 
