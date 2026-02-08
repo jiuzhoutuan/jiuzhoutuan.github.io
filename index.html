@@ -8,32 +8,75 @@
 </head>
 <body>
 
-  <header class="hero">
-    <div class="container hero-card">
-      <div class="brandline">
-        <div class="brand">九州</div>
-        <div class="sub">率土之滨 · 战盟官网</div>
+  <!-- 顶部导航 -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+
+      <div style="font-weight:800;letter-spacing:2px;">
+        九州
       </div>
 
-      <div class="slogan">聚九州豪杰，定天下山河。</div>
+      <div class="nav">
+        <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
+        <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
+        <a href="members.html" data-i18n data-zh="成员" data-en="Members">成员</a>
+        <a href="warlog.html" data-i18n data-zh="战报" data-en="War Log">战报</a>
+      </div>
+
+      <!-- 语言按钮 -->
+      <div class="lang">
+        <button id="btn-zh" class="active">中文</button>
+        <button id="btn-en">English</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 首页主视觉 -->
+  <header class="hero">
+    <div class="container hero-card">
+
+      <div class="brandline">
+        <div class="brand">九州</div>
+        <div class="sub"
+             data-i18n
+             data-zh="率土之滨 · 战盟官网"
+             data-en="Rise of Kingdoms · Alliance Website">
+             率土之滨 · 战盟官网
+        </div>
+      </div>
+
+      <div class="slogan"
+           data-i18n
+           data-zh="聚九州豪杰，定天下山河。"
+           data-en="Gather heroes of Jiuzhou, shape the world together.">
+           聚九州豪杰，定天下山河。
+      </div>
 
       <div class="badges">
-        <span class="badge">前缀：九州丨XX（丨代替｜）</span>
-        <span class="badge">目标：征服 / 霸业</span>
+        <span class="badge"
+              data-i18n
+              data-zh="前缀：九州丨XX（丨代替｜）"
+              data-en="Tag: 九州丨XX (丨 is used instead of ｜)">
+              前缀：九州丨XX（丨代替｜）
+        </span>
+        <span class="badge"
+              data-i18n
+              data-zh="目标：征服 / 霸业"
+              data-en="Goal: Conquest / Dominance">
+              目标：征服 / 霸业
+        </span>
       </div>
 
       <div class="cta">
-        <a class="btn" href="recruit.html">招募</a>
-        <a class="btn" href="rules.html">团规</a>
-        <a class="btn" href="members.html">成员</a>
-        <a class="btn" href="warlog.html">战报</a>
+        <a class="btn" href="recruit.html" data-i18n data-zh="加入我们" data-en="Join Us">加入我们</a>
       </div>
+
     </div>
   </header>
 
-  <footer class="footer">
-    © 九州｜率土之滨战盟
-  </footer>
+  <footer class="footer">© 九州｜率土之滨战盟</footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
