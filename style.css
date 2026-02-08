@@ -167,3 +167,21 @@ body{
 }
 .member .name{font-weight:700; color:var(--text)}
 .member .role{color:var(--muted); font-size:13px; margin-top:4px}
+.lang{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  justify-content:flex-end;
+}
+.lang button{
+  cursor:pointer;
+  color:var(--text);
+  padding:8px 10px;
+  border:1px solid var(--border);
+  border-radius:14px;
+  background: rgba(255,255,255,.03);
+}
+.lang button.active{
+  border-color: rgba(255,255,255,.32);
+  background: rgba(255,255,255,.07);
+}
