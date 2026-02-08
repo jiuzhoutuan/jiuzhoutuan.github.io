@@ -91,6 +91,7 @@ const attendanceSeasons = [
     records: [
       { name: "九州丨奉孝", present: 6, total: 7, noteZh: "优秀", noteEn: "Excellent" },
       { name: "九州丨子龙", present: 5, total: 7, noteZh: "正常", noteEn: "Normal" },
+      { name: "九州丨嘻嘻", present: 0, total: 7, noteZh: "划水", noteEn: "Ghost" },
     ],
   }
 ];
