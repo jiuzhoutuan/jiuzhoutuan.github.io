@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    font-family: "Noto Serif SC", serif;
+    background:#0a0a0f;
+    color:white;
+}
+
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9)),
+               url('banner.jpg');
+    background-size:cover;
+}
+
+h1{
+    font-size:64px;
+    letter-spacing:10px;
+}
+
+.section{
+    max-width:900px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:#151520;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+}
