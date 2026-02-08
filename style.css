@@ -1,187 +1,42 @@
-:root{
-  --bg:#07070b;
-  --panel:#12121a;
-  --text:#f2f2f6;
-  --muted:#b7b7c6;
-  --border:rgba(255,255,255,.10);
-}
-
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family: system-ui, -apple-system, "PingFang SC", "Microsoft Yahei", sans-serif;
-  background: radial-gradient(1100px 700px at 50% -10%, rgba(255,255,255,.09), transparent 60%), var(--bg);
-  color:var(--text);
-}
-
-.container{
-  width:min(1000px, 92vw);
-  margin:0 auto;
-}
-
-/* 首页霸气一屏 */
-.hero{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:40px 0;
-}
-.hero-card{
-  border:1px solid var(--border);
-  border-radius:24px;
-  padding:46px 22px;
-  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-  box-shadow: 0 0 0 1px rgba(0,0,0,.45) inset, 0 24px 70px rgba(0,0,0,.55);
-  text-align:center;
-  position:relative;
-  overflow:hidden;
-}
-.hero-card:before{
-  content:"";
-  position:absolute;
-  inset:-35%;
-  background: radial-gradient(circle at 50% 30%, rgba(255,255,255,.14), transparent 55%);
-  transform: rotate(10deg);
-}
-.hero-card > *{position:relative}
-
-.brandline{display:flex;flex-direction:column;gap:10px}
-.brand{
-  font-weight:900;
-  font-size:64px;
-  letter-spacing:14px;
-}
-.sub{
-  color:var(--muted);
-  font-weight:600;
-}
-
-.slogan{
-  margin-top:18px;
-  font-size:18px;
-  color:var(--text);
-  letter-spacing:1px;
-}
-
-.badges{
-  margin-top:18px;
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-}
-.badge{
-  padding:8px 12px;
-  border:1px solid var(--border);
-  border-radius:999px;
-  color:var(--muted);
-  background: rgba(255,255,255,.03);
-}
-
-.cta{
-  margin-top:22px;
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
-.btn{
-  display:inline-block;
+/* 左上角 Logo（九州/以后团徽） */
+.logo-link{
   text-decoration:none;
   color:var(--text);
-  padding:12px 16px;
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+/* 表格（考勤页用） */
+.table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  overflow:hidden;
+  border:1px solid var(--border);
   border-radius:16px;
-  border:1px solid rgba(255,255,255,.18);
-  background: rgba(255,255,255,.04);
 }
-.btn:hover{
-  border-color: rgba(255,255,255,.32);
-  background: rgba(255,255,255,.06);
-}
-
-.footer{
-  padding:16px 0 26px;
-  color:var(--muted);
-  text-align:center;
-  border-top:1px solid var(--border);
-}
-
-/* 内页通用布局 */
-.page{
-  min-height:100vh;
-}
-.topbar{
-  position:sticky;
-  top:0;
-  background: rgba(7,7,11,.72);
-  backdrop-filter: blur(10px);
+.table th, .table td{
+  text-align:left;
+  padding:12px;
   border-bottom:1px solid var(--border);
+  color:var(--muted);
 }
-.topbar-inner{
+.table th{color:var(--text); background: rgba(255,255,255,.03)}
+.table tr:last-child td{border-bottom:none}
+
+.controls{
   display:flex;
+  gap:10px;
+  flex-wrap:wrap;
   align-items:center;
   justify-content:space-between;
-  padding:12px 0;
-  gap:12px;
 }
-.nav{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
-.nav a{
-  color:var(--text);
-  text-decoration:none;
-  padding:8px 10px;
-  border:1px solid var(--border);
-  border-radius:14px;
-}
-.nav a:hover{border-color:rgba(255,255,255,.25)}
-
-.main{
-  padding:26px 0 40px;
-}
-.card{
-  background: rgba(18,18,26,.92);
-  border:1px solid var(--border);
-  border-radius:18px;
-  padding:18px;
-  margin:14px 0;
-}
-.card h1{margin:0 0 10px; font-size:22px}
-.card h2{margin:0 0 10px; font-size:18px}
-.card p, .card li{color:var(--muted); line-height:1.8}
-
-.members{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap:10px;
-}
-.member{
-  padding:12px;
-  border:1px solid var(--border);
-  border-radius:16px;
-  background: rgba(255,255,255,.03);
-}
-.member .name{font-weight:700; color:var(--text)}
-.member .role{color:var(--muted); font-size:13px; margin-top:4px}
-.lang{
-  display:flex;
-  gap:8px;
-  align-items:center;
-  justify-content:flex-end;
-}
-.lang button{
-  cursor:pointer;
-  color:var(--text);
-  padding:8px 10px;
+.input, .select{
+  padding:10px 12px;
   border:1px solid var(--border);
   border-radius:14px;
   background: rgba(255,255,255,.03);
+  color: var(--text);
+  outline:none;
 }
-.lang button.active{
-  border-color: rgba(255,255,255,.32);
-  background: rgba(255,255,255,.07);
-}
+.hint{color:var(--muted); margin-top:10px}
