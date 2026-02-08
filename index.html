@@ -1,36 +1,122 @@
 <!doctype html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>九州战盟</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>九州｜率土之滨战盟官网</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<div class="hero">
-    <h1>九州</h1>
-    <p>率土之滨 · 战盟官网</p>
-</div>
-
-<div class="section">
-
-    <div class="card">
-        <h2>战盟介绍</h2>
-        <p>这里写九州团定位、作息、目标。</p>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">九州 <small>率土之滨战盟官网</small></div>
+      <div class="nav">
+        <a href="#about">简介</a>
+        <a href="#rules">团规</a>
+        <a href="#recruit">招募</a>
+        <a href="#members-area">成员</a>
+        <a href="#warlog">战报</a>
+      </div>
     </div>
+  </div>
 
-    <div class="card">
-        <h2>招募要求</h2>
-        <p>活跃 · 跟盟令 · 能打城</p>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <h1>九州</h1>
+        <p class="subtitle">聚九州豪杰，定天下山河。</p>
+        <div class="badges">
+          <div class="badge">前缀：九州丨XX</div>
+          <div class="badge">主打：同盟执行力</div>
+          <div class="badge">目标：征服 / 霸业</div>
+        </div>
+      </div>
     </div>
+  </header>
 
-    <div class="card">
-        <h2>成员榜单</h2>
-        <p>以后这里放成员战力榜。</p>
+  <main class="container">
+
+    <section id="about" class="section">
+      <div class="grid">
+        <div class="card">
+          <h2>战盟简介</h2>
+          <p>九州是率土之滨战盟，强调纪律与协同，擅长攻城与州战。我们欢迎能跟盟令、愿意一起打出赛季成绩的伙伴。</p>
+        </div>
+        <div class="card">
+          <h2>作息与活动</h2>
+          <ul class="list">
+            <li>主要活跃：晚间为主（可按实际改）</li>
+            <li>攻城/集结：以盟令为准</li>
+            <li>战场沟通：统一群/频道</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>外交与风格</h2>
+          <p>尊重盟约，讲信用；战场上执行优先，复盘优先。我们更在意“能一起打赢”，而不是单人爽。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rules" class="section">
+      <div class="card">
+        <h2>团规（可直接改成你们真实版本）</h2>
+        <ul class="list">
+          <li>必须跟盟令：迁城、铺路、集火、拆迁等行动统一节奏</li>
+          <li>不内耗：有问题先找管理沟通，不公开阴阳怪气</li>
+          <li>攻城位/要塞位服从安排：确保整体效率</li>
+          <li>缺勤提前说：临时有事提前报备</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="recruit" class="section">
+      <div class="grid">
+        <div class="card">
+          <h2>招募要求</h2>
+          <ul class="list">
+            <li>活跃稳定、能沟通</li>
+            <li>愿意跟盟令，能打城/能参战</li>
+            <li>有主力队伍或愿意学习配队</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>加入方式</h2>
+          <ul class="list">
+            <li>游戏内私聊：九州丨奉孝（你可以改）</li>
+            <li>或加群：XXX（你填）</li>
+            <li>备注：来自官网 / 招募</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="members-area" class="section">
+      <div class="card">
+        <h2>成员名册（自动渲染）</h2>
+        <p>只需要修改 <b>main.js</b> 里的 members 数组，就会自动更新这里。</p>
+        <div id="members" class="members"></div>
+      </div>
+    </section>
+
+    <section id="warlog" class="section">
+      <div class="card">
+        <h2>战报（示例）</h2>
+        <ul class="list">
+          <li>2026-02-08：官网上线</li>
+          <li>2026-02-XX：攻城 / 州战记录（你填）</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 九州｜率土之滨战盟
     </div>
+  </footer>
 
-</div>
-
+  <script src="main.js"></script>
 </body>
 </html>
