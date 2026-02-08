@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>九州｜成员</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page">
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div style="font-weight:800;letter-spacing:2px;">
+        九州 <span style="color:var(--muted);font-weight:600;letter-spacing:0;" data-i18n data-zh="成员" data-en="Members">成员</span>
+      </div>
+
+      <div class="nav">
+        <a href="index.html" data-i18n data-zh="主页" data-en="Home">主页</a>
+        <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
+        <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
+        <a href="warlog.html" data-i18n data-zh="战报" data-en="War Log">战报</a>
+      </div>
+
+      <div class="lang">
+        <button id="btn-zh" class="active">中文</button>
+        <button id="btn-en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="container main">
+    <div class="card">
+      <h1 data-i18n data-zh="成员名册" data-en="Member Roster">成员名册</h1>
+      <p data-i18n
+         data-zh="成员列表来自 main.js 里的 members 数组。你只要改那里，这页会自动更新。"
+         data-en="The roster is rendered from the members array in main.js. Edit it there and this page updates automatically.">
+        成员列表来自 main.js 里的 members 数组。你只要改那里，这页会自动更新。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n data-zh="成员" data-en="Members">成员</h2>
+      <div id="members" class="members"></div>
+    </div>
+  </main>
+
+  <footer class="footer">© 九州｜率土之滨战盟</footer>
+  <script src="main.js"></script>
+</body>
+</html>
