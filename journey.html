@@ -3,24 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>九州｜征程</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#07070b">
-  
+  <title data-i18n data-zh="九州｜征程" data-en="Jiuzhou | Journey">九州｜征程</title>
+
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="apple-touch-icon" href="assets/logo-mark.png">
+  <link rel="stylesheet" href="style.css?v=1" />
 </head>
 <body class="page">
 
-  <!-- 统一导航（粘贴那段 topbar 模板） -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <a class="logo-link" href="index.html" aria-label="九州主页">
-        <img class="logo-img" src="assets/logo.png" alt="九州团徽">
+      <a class="logo-link" href="index.html" aria-label="回到主页">
+        <img class="logo-img" src="assets/logo-nav.png" alt="九州">
       </a>
-      
+
       <div class="nav">
         <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
         <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
@@ -30,6 +26,7 @@
         <a href="contribution.html" data-i18n data-zh="贡献" data-en="Contribution">贡献</a>
         <a href="redeem.html" data-i18n data-zh="兑换" data-en="Redeem">兑换</a>
       </div>
+
       <div class="lang">
         <button id="btn-zh" class="active">中文</button>
         <button id="btn-en">English</button>
@@ -37,24 +34,24 @@
     </div>
   </div>
 
-  <main class="container main">
-    <div class="card">
-      <h1 data-i18n data-zh="九州征程" data-en="Our Journey">九州征程</h1>
-      <p data-i18n
-         data-zh="记录九州一路走来的经历与关键战役。这里先放骨架，你之后把事件填进去即可。"
-         data-en="A record of key moments and milestones. This is a starter layout—fill in events as you like.">
-        记录九州一路走来的经历与关键战役。这里先放骨架，你之后把事件填进去即可。
-      </p>
-    </div>
+  <main class="main">
+    <div class="container">
+      <section class="card">
+        <h1 data-i18n data-zh="征程" data-en="Journey">征程</h1>
+        <p data-i18n
+           data-zh="这里记录九州一路走来的经历：落州、破关、会战、逆风翻盘、赛季荣誉……后面你把素材发我，我帮你排成时间轴（很帅）。"
+           data-en="Document Jiuzhou’s history here: regions, major battles, comebacks, season honours. Send me your notes later and I’ll format it into a clean timeline.">
+          这里记录九州一路走来的经历：落州、破关、会战、逆风翻盘、赛季荣誉……后面你把素材发我，我帮你排成时间轴（很帅）。
+        </p>
+      </section>
 
-    <div class="card">
-      <h2 data-i18n data-zh="时间线" data-en="Timeline">时间线</h2>
-      <ul>
-        <li data-i18n data-zh="2026-02-08：九州官网上线" data-en="2026-02-08: 九州 website launched">2026-02-08：九州官网上线</li>
-        <li data-i18n data-zh="（待填写）首次攻城 / 州战 / 结盟 / 霸业节点" data-en="(To fill) first siege / major battles / alliances / season milestones">
-          （待填写）首次攻城 / 州战 / 结盟 / 霸业节点
-        </li>
-      </ul>
+      <section class="card">
+        <h2 data-i18n data-zh="（占位）赛季记录" data-en="(Placeholder) Seasons">（占位）赛季记录</h2>
+        <ul>
+          <li data-i18n data-zh="S2-2026：这里写一句总结" data-en="S2-2026: one-line summary here">S2-2026：这里写一句总结</li>
+          <li data-i18n data-zh="S1-2026：这里写一句总结" data-en="S1-2026: one-line summary here">S1-2026：这里写一句总结</li>
+        </ul>
+      </section>
     </div>
   </main>
 

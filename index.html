@@ -3,24 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>九州｜率土之滨</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#07070b">
-  
-</head>
-<body>
+  <title>九州</title>
 
-  <!-- 统一导航（粘贴那段 topbar 模板） -->
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="apple-touch-icon" href="assets/logo-mark.png">
+
+  <link rel="stylesheet" href="style.css?v=1" />
+</head>
+<body class="page">
+
   <div class="topbar">
     <div class="container topbar-inner">
-      <a class="logo-link" href="index.html" aria-label="九州主页">
-        <img class="logo-img" src="assets/logo.png" alt="九州团徽">
+      <a class="logo-link" href="index.html" aria-label="回到主页">
+        <img class="logo-img" src="assets/logo-nav.png" alt="九州">
       </a>
-      
+
       <div class="nav">
         <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
         <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
@@ -30,6 +27,7 @@
         <a href="contribution.html" data-i18n data-zh="贡献" data-en="Contribution">贡献</a>
         <a href="redeem.html" data-i18n data-zh="兑换" data-en="Redeem">兑换</a>
       </div>
+
       <div class="lang">
         <button id="btn-zh" class="active">中文</button>
         <button id="btn-en">English</button>
@@ -37,33 +35,26 @@
     </div>
   </div>
 
-  <header class="hero">
-    <div class="container hero-card">
-      <div class="brandline">
-        <div class="brand">九州</div>
-        <img class="home-emblem" src="assets/logo.png" alt="九州团徽">
+  <section class="hero">
+    <div class="container">
+      <div class="card hero-card">
+        <img class="home-logo" src="assets/logo-main.png" alt="九州团徽">
+
+        <h1 class="brand" data-i18n data-zh="九州" data-en="Jiuzhou">九州</h1>
         <div class="sub"
              data-i18n
-             data-zh="率土之滨 · 战盟官网"
-             data-en="Infinite Borders · Alliance Site">
-          率土之滨 · 战盟官网
+             data-zh="率土之滨（Infinite Borders）战盟官网"
+             data-en="Official Alliance Site — Infinite Borders">
+          率土之滨（Infinite Borders）战盟官网
+        </div>
+
+        <div class="cta">
+          <a class="btn primary" href="recruit.html" data-i18n data-zh="查看招募" data-en="Recruitment">查看招募</a>
+          <a class="btn" href="journey.html" data-i18n data-zh="九州征程" data-en="Journey">九州征程</a>
         </div>
       </div>
-
-      <div class="slogan"
-           data-i18n
-           data-zh="聚九州豪杰，定天下山河。"
-           data-en="Gather the bold. March beyond borders.">
-        聚九州豪杰，定天下山河。
-      </div>
-
-      <!-- 首页只留入口，干净 -->
-      <div class="cta" style="margin-top:26px;">
-        <a class="btn" href="recruit.html" data-i18n data-zh="加入九州" data-en="Join 九州">加入九州</a>
-        <a class="btn" href="journey.html" data-i18n data-zh="九州征程" data-en="Our Journey">九州征程</a>
-      </div>
     </div>
-  </header>
+  </section>
 
   <footer class="footer">© 九州</footer>
   <script src="main.js?v=1" defer></script>

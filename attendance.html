@@ -3,37 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>九州｜考勤</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#07070b">
-  
+  <title data-i18n data-zh="九州｜考勤" data-en="Jiuzhou | Attendance">九州｜考勤</title>
+
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="apple-touch-icon" href="assets/logo-mark.png">
+  <link rel="stylesheet" href="style.css?v=1" />
 </head>
 <body class="page">
 
-  <!-- 统一导航（粘贴那段 topbar 模板） -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <a class="logo-link" href="index.html" aria-label="九州主页">
-        <img class="logo-img" src="assets/logo.png" alt="九州团徽">
-      </a>      
+      <a class="logo-link" href="index.html" aria-label="回到主页">
+        <img class="logo-img" src="assets/logo-nav.png" alt="九州">
+      </a>
+
       <div class="nav">
         <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
         <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
         <a href="members.html" data-i18n data-zh="成员" data-en="Members">成员</a>
         <a href="attendance.html" data-i18n data-zh="考勤" data-en="Attendance">考勤</a>
         <a href="journey.html" data-i18n data-zh="征程" data-en="Journey">征程</a>
-        <a href="contribution.html" data-i18n data-zh="贡献" data-en=h<link rel="icon" href="/favicon.ico" sizes="any">
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-          <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-          <meta name="theme-color" content="#07070b">
-          "Contribution">贡献</a>
+        <a href="contribution.html" data-i18n data-zh="贡献" data-en="Contribution">贡献</a>
         <a href="redeem.html" data-i18n data-zh="兑换" data-en="Redeem">兑换</a>
       </div>
+
       <div class="lang">
         <button id="btn-zh" class="active">中文</button>
         <button id="btn-en">English</button>
@@ -41,46 +34,37 @@
     </div>
   </div>
 
-  <main class="container main">
-    <div class="card">
-      <h1 data-i18n data-zh="考勤" data-en="Attendance">考勤</h1>
-      <p class="hint" data-i18n
-         data-zh="选择赛季后可查看全员考勤；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。"
-         data-en="Select a season to view attendance. Search your in-game name (e.g., 九州丨奉孝) to find your record fast.">
-        选择赛季后可查看全员考勤；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。
-      </p>
-    </div>
+  <main class="main">
+    <div class="container">
+      <section class="card">
+        <h1 data-i18n data-zh="考勤" data-en="Attendance">考勤</h1>
+        <p class="hint" id="att-archive-hint"></p>
 
-    <div class="card">
-      <div class="controls">
-        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <div class="controls" style="margin:12px 0;">
           <select id="att-season" class="select"></select>
-          <span id="att-archive-hint" class="hint"></span>
+
+          <input id="att-search"
+                 class="input"
+                 data-i18n-placeholder
+                 data-zh-placeholder="搜索：输入你的游戏名（例如 九州丨奉孝）"
+                 data-en-placeholder="Search: enter your in-game name (e.g. 九州丨奉孝)"
+                 placeholder="搜索：输入你的游戏名（例如 九州丨奉孝）" />
         </div>
 
-        <input id="att-search"
-               class="input"
-               data-i18n-placeholder
-               data-zh-placeholder="搜索：输入你的游戏名…"
-               data-en-placeholder="Search your in-game name…"
-               placeholder="搜索：输入你的游戏名…" />
-      </div>
-
-      <div style="margin-top:14px; overflow:auto;">
         <table class="table">
           <thead>
             <tr>
               <th data-i18n data-zh="成员" data-en="Member">成员</th>
-              <th data-i18n data-zh="出勤" data-en="Attendance">出勤</th>
-              <th data-i18n data-zh="比例" data-en="Rate">比例</th>
+              <th data-i18n data-zh="出勤/总次数" data-en="Present/Total">出勤/总次数</th>
+              <th data-i18n data-zh="出勤率" data-en="Rate">出勤率</th>
               <th data-i18n data-zh="备注" data-en="Note">备注</th>
             </tr>
           </thead>
           <tbody id="att-body"></tbody>
         </table>
-      </div>
 
-      <div id="att-empty" class="hint" style="display:none;"></div>
+        <p class="hint" id="att-empty" style="display:none;"></p>
+      </section>
     </div>
   </main>
 

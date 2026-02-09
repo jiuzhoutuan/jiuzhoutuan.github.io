@@ -3,24 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>九州｜贡献</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#07070b">
-  
+  <title data-i18n data-zh="九州｜贡献" data-en="Jiuzhou | Contribution">九州｜贡献</title>
+
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="apple-touch-icon" href="assets/logo-mark.png">
+  <link rel="stylesheet" href="style.css?v=1" />
 </head>
 <body class="page">
 
-  <!-- 统一导航（粘贴那段 topbar 模板） -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <a class="logo-link" href="index.html" aria-label="九州主页">
-        <img class="logo-img" src="assets/logo.png" alt="九州团徽">
+      <a class="logo-link" href="index.html" aria-label="回到主页">
+        <img class="logo-img" src="assets/logo-nav.png" alt="九州">
       </a>
-      
+
       <div class="nav">
         <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
         <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
@@ -30,6 +26,7 @@
         <a href="contribution.html" data-i18n data-zh="贡献" data-en="Contribution">贡献</a>
         <a href="redeem.html" data-i18n data-zh="兑换" data-en="Redeem">兑换</a>
       </div>
+
       <div class="lang">
         <button id="btn-zh" class="active">中文</button>
         <button id="btn-en">English</button>
@@ -37,47 +34,46 @@
     </div>
   </div>
 
-  <main class="container main">
-    <div class="card">
-      <h1 data-i18n data-zh="贡献" data-en="Contribution">贡献</h1>
-      <p class="hint"
-         data-i18n
-         data-zh="选择赛季后可查看全员贡献；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。"
-         data-en="Select a season to view contributions. Search your in-game name (e.g., 九州丨奉孝) to find your record fast.">
-        选择赛季后可查看全员贡献；在搜索框输入你的游戏名（如：九州丨奉孝）即可快速定位。
-      </p>
-    </div>
+  <main class="main">
+    <div class="container">
+      <section class="card">
+        <h1 data-i18n data-zh="贡献" data-en="Contribution">贡献</h1>
+        <p class="hint" id="con-archive-hint"></p>
 
-    <div class="card">
-      <div class="controls">
-        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <div class="controls" style="margin:12px 0;">
           <select id="con-season" class="select"></select>
-          <span id="con-archive-hint" class="hint"></span>
+
+          <input id="con-search"
+                 class="input"
+                 data-i18n-placeholder
+                 data-zh-placeholder="搜索：输入你的游戏名（例如 九州丨奉孝）"
+                 data-en-placeholder="Search: enter your in-game name (e.g. 九州丨奉孝)"
+                 placeholder="搜索：输入你的游戏名（例如 九州丨奉孝）" />
         </div>
 
-        <input id="con-search"
-               class="input"
-               data-i18n-placeholder
-               data-zh-placeholder="搜索：输入你的游戏名…"
-               data-en-placeholder="Search your in-game name…"
-               placeholder="搜索：输入你的游戏名…" />
-      </div>
-
-      <div style="margin-top:14px; overflow:auto;">
         <table class="table">
           <thead>
             <tr>
               <th data-i18n data-zh="成员" data-en="Member">成员</th>
-              <th data-i18n data-zh="贡献" data-en="Contribution">贡献</th>
+              <th data-i18n data-zh="贡献值" data-en="Value">贡献值</th>
               <th data-i18n data-zh="等级" data-en="Tier">等级</th>
               <th data-i18n data-zh="备注" data-en="Note">备注</th>
             </tr>
           </thead>
           <tbody id="con-body"></tbody>
         </table>
-      </div>
 
-      <div id="con-empty" class="hint" style="display:none;"></div>
+        <p class="hint" id="con-empty" style="display:none;"></p>
+      </section>
+
+      <section class="card">
+        <h2 data-i18n data-zh="制度说明（暂定）" data-en="Policy (TBD)">制度说明（暂定）</h2>
+        <p data-i18n
+           data-zh="这块先留空：等管理层把贡献制度定下来，我们再做自动计算/排行榜/兑换资格。"
+           data-en="Leave this blank for now. Once the officers finalise the scoring rules, we’ll add auto ranking and redeem eligibility.">
+          这块先留空：等管理层把贡献制度定下来，我们再做自动计算/排行榜/兑换资格。
+        </p>
+      </section>
     </div>
   </main>
 

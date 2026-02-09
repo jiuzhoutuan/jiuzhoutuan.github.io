@@ -3,25 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>九州｜成员</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#07070b">
-  
+  <title data-i18n data-zh="九州｜成员" data-en="Jiuzhou | Members">九州｜成员</title>
+
+  <link rel="icon" href="assets/logo-mark.png">
+  <link rel="apple-touch-icon" href="assets/logo-mark.png">
+  <link rel="stylesheet" href="style.css?v=1" />
 </head>
 <body class="page">
 
   <div class="topbar">
     <div class="container topbar-inner">
-      <!-- 左上角：以后换团徽，点击回主页 -->
-      <a class="logo-link" href="index.html" aria-label="九州主页">
-        <img class="logo-img" src="assets/logo.png" alt="九州团徽">
+      <a class="logo-link" href="index.html" aria-label="回到主页">
+        <img class="logo-img" src="assets/logo-nav.png" alt="九州">
       </a>
-      
-  
+
       <div class="nav">
         <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
         <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
@@ -31,32 +26,30 @@
         <a href="contribution.html" data-i18n data-zh="贡献" data-en="Contribution">贡献</a>
         <a href="redeem.html" data-i18n data-zh="兑换" data-en="Redeem">兑换</a>
       </div>
-  
+
       <div class="lang">
         <button id="btn-zh" class="active">中文</button>
         <button id="btn-en">English</button>
       </div>
     </div>
   </div>
-  
 
-  <main class="container main">
-    <div class="card">
-      <h1 data-i18n data-zh="成员名册" data-en="Member Roster">成员名册</h1>
-      <p data-i18n
-         data-zh="成员列表来自 main.js 里的 members 数组。"
-         data-en="The roster is rendered from the members array in main.js. ">
-        成员列表来自 main.js 里的 members 数组。你只要改那里，这页会自动更新。
-      </p>
-    </div>
+  <main class="main">
+    <div class="container">
+      <section class="card">
+        <h1 data-i18n data-zh="成员" data-en="Members">成员</h1>
+        <p class="hint" data-i18n
+           data-zh="成员名单来自 data/members.json。你只改 JSON 就能更新。"
+           data-en="This list is loaded from data/members.json. Update JSON only.">
+          成员名单来自 data/members.json。你只改 JSON 就能更新。
+        </p>
 
-    <div class="card">
-      <h2 data-i18n data-zh="成员" data-en="Members">成员</h2>
-      <div id="members" class="members"></div>
+        <div id="members" class="members"></div>
+      </section>
     </div>
   </main>
 
-  <footer class="footer">© 九州｜率土之滨战盟</footer>
+  <footer class="footer">© 九州</footer>
   <script src="main.js?v=1" defer></script>
 </body>
 </html>
