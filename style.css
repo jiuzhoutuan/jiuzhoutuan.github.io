@@ -297,3 +297,97 @@ body:before{
   border-top:1px solid var(--line);
   background: rgba(251,251,250,.72);
 }
+/* =========================
+   水墨亮色 V1+（卷轴/宣纸/晕染）
+   只需追加到 style.css 末尾
+   ========================= */
+
+/* 更像宣纸：加纤维+颗粒（极淡） */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  /* 纤维纹理 + 细颗粒 */
+  background:
+    repeating-linear-gradient(90deg, rgba(0,0,0,.018) 0 1px, transparent 1px 9px),
+    repeating-linear-gradient(0deg, rgba(0,0,0,.014) 0 1px, transparent 1px 11px),
+    radial-gradient(circle at 20% 10%, rgba(0,0,0,.06), transparent 55%),
+    radial-gradient(circle at 80% 30%, rgba(0,0,0,.05), transparent 60%);
+  opacity:.12;
+  mix-blend-mode:multiply;
+}
+
+/* 水墨晕染角落 + 印泥红一笔（很克制） */
+body::after{
+  content:"";
+  position:fixed;
+  inset:-12%;
+  pointer-events:none;
+  background:
+    radial-gradient(700px 520px at 12% 10%, rgba(0,0,0,.10), transparent 62%),
+    radial-gradient(620px 520px at 88% 18%, rgba(0,0,0,.08), transparent 64%),
+    radial-gradient(800px 620px at 50% 100%, rgba(0,0,0,.06), transparent 62%),
+    radial-gradient(420px 300px at 78% 88%, rgba(178,31,31,.10), transparent 60%);
+  filter: blur(26px);
+  opacity:.55;
+}
+
+/* 顶部导航更像“卷轴边” */
+.topbar{
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+.topbar:after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:-1px;
+  height:1px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,.12), transparent);
+  pointer-events:none;
+}
+
+/* 卡片像“宣纸页” + 轻微边缘墨痕 */
+.card{
+  position:relative;
+  overflow:hidden;
+}
+.card:before{
+  content:"";
+  position:absolute;
+  inset:-30%;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(0,0,0,.06), transparent 45%),
+    radial-gradient(circle at 90% 30%, rgba(0,0,0,.05), transparent 52%),
+    radial-gradient(circle at 50% 110%, rgba(178,31,31,.05), transparent 45%);
+  filter: blur(28px);
+  opacity:.35;
+  pointer-events:none;
+}
+.card > *{ position:relative; }
+
+/* 按钮更“章印感”一点 */
+.btn.primary{
+  box-shadow: 0 10px 22px rgba(178,31,31,.08);
+}
+.btn.primary:hover{
+  background: rgba(178,31,31,.09);
+}
+
+/* 首页团徽：一点点“印章呼吸”（非常克制） */
+@keyframes sealBreath{
+  0%,100%{ transform: translateY(0); filter: drop-shadow(0 10px 14px rgba(0,0,0,.10)); }
+  50%{ transform: translateY(-1px); filter: drop-shadow(0 14px 18px rgba(0,0,0,.12)); }
+}
+.home-logo{
+  animation: sealBreath 6s ease-in-out infinite;
+}
+
+/* 左上角骑兵logo：hover 微微提亮 */
+.logo-img{
+  transition: transform .12s ease, filter .12s ease;
+}
+.logo-img:hover{
+  transform: translateY(-1px);
+  filter: contrast(1.05);
+}
+
