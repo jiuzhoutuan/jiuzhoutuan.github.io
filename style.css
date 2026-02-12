@@ -956,3 +956,22 @@ body::after{
   opacity:.65;
   font-weight:700;
 }
+
+/* 铺路队：卡片布局和管理层一致（不要整行拉满） */
+.officer-blue{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+}
+
+/* 铺路队：底座条改成淡蓝色（覆盖管理层的印泥红） */
+.officer-blue .officer-card::after{
+  background: rgba(120, 170, 230, .40) !important;
+}
+
+/* 如果你的底座条不是 ::after，而是某个子元素（比如 .bar/.base/.underline），也一起覆盖 */
+.officer-blue .officer-card .bar,
+.officer-blue .officer-card .base,
+.officer-blue .officer-card .underline{
+  background: rgba(120, 170, 230, .40) !important;
+}
