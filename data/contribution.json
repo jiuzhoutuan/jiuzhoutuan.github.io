@@ -1,14 +1,32 @@
 [
-    {
-      "id": "S2-2026",
-      "titleZh": "S2 赛季（进行中）",
-      "titleEn": "Season S2 (Ongoing)",
-      "archived": false,
-      "records": [
-        {"name":"九州丨奉孝","value":420,"tierZh":"A","tierEn":"A","noteZh":"优秀","noteEn":"Excellent"},
-        {"name":"九州丨子龙","value":260,"tierZh":"B","tierEn":"B","noteZh":"正常","noteEn":"Normal"},
-        {"name":"不败","value":666,"tierZh":"S","tierEn":"S","noteZh":"nb","noteEn":"niubi"}
-      ]
-    }
-  ]
-  
+  {
+    "id": "S2-2026",
+    "titleZh": "S2 赛季（进行中）",
+    "titleEn": "Season S2 (Ongoing)",
+    "archived": false,
+    "records": [
+      {
+        "name": "九州丨奉孝",
+        "road": 25,
+        "city": 18,
+        "merit": 62,
+        "flip": 12,
+        "violation": -10,
+        "special": 20,
+        "noteZh": "洛阳首占+20；机场+20",
+        "noteEn": "Luoyang first capture +20; Airport +20"
+      },
+      {
+        "name": "九州丨子龙",
+        "road": 10,
+        "city": 7,
+        "merit": 30,
+        "flip": 6,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "",
+        "noteEn": ""
+      }
+    ]
+  }
+]
