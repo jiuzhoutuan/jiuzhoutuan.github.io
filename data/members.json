@@ -4,9 +4,9 @@
   { "name": "九州丨三拳", "roleZh": "副团长 / 土地纠纷与惩罚", "roleEn": "Deputy Leader / Land & Penalties" },
   { "name": "九州丨奉孝", "roleZh": "管理 / 积分奖励", "roleEn": "Officer / Points" },
   { "name": "九州 金子", "roleZh": "管理 / 指挥", "roleEn": "Officer / Commander" },
-  { "name": "不败的神话", "roleZh": "管理", "roleEn": "Officer / Commander" },
+  { "name": "不败的神话", "roleZh": "管理", "roleEn": "Officer" },
   { "name": "九州丨白杆", "roleZh": "管理", "roleEn": "Officer" },
-  { "name": "马德里阿隆索", "roleZh": "管理 / 积分奖励", "roleEn": "Officer / Commander" },
+  { "name": "马德里阿隆索", "roleZh": "管理", "roleEn": "Officer" },
 
   { "name": "九州丨子龙", "roleZh": "成员", "roleEn": "Member" },
   { "name": "九州丨文和", "roleZh": "成员", "roleEn": "Member" },
