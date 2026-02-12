@@ -171,12 +171,14 @@ function renderContribution(){
 
   const filtered = computed.filter(r=>!keyword || (r.name || "").includes(keyword));
 
-  body.innerHTML = filtered.map(r=>{
+  body.innerHTML = filtered.map((r, idx)=>{
     const note = lang==="en" ? (r.noteEn || "") : (r.noteZh || "");
     const v = safeNum(r.violation);
-
+    const rank = idx + 1;
+    const topClass = rank <= 3 ? "top3" : "";
+  
     return `
-      <tr>
+      <tr class="${topClass}">
         <td>${r.name || ""}</td>
         <td>${safeNum(r.road)}</td>
         <td>${safeNum(r.city)}</td>
