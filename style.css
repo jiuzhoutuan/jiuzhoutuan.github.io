@@ -963,8 +963,8 @@ body::after{
 
 /* 铺路队：固定卡片宽度（你可以调 220/240） */
 .officer-blue .officer-card{
-  flex: 0 0 220px;   /* 固定宽度 */
-  max-width: 220px;
+  flex: 0 0 180px;   /* 固定宽度 */
+  max-width: 180px;
 }
 
 
