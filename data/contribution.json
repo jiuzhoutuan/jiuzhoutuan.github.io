@@ -68,8 +68,8 @@
         "flip": 20,
         "violation": 0,
         "special": 0,
-        "noteZh": "军师",
-        "noteEn": "military advisor"
+        "noteZh": "",
+        "noteEn": ""
       },
       {
         "name": "t2",
@@ -79,8 +79,8 @@
         "flip": 20,
         "violation": 0,
         "special": 0,
-        "noteZh": "军师",
-        "noteEn": "military advisor"
+        "noteZh": "",
+        "noteEn": ""
       },
       {
         "name": "t3",
@@ -90,8 +90,8 @@
         "flip": 20,
         "violation": 0,
         "special": 0,
-        "noteZh": "军师",
-        "noteEn": "military advisor"
+        "noteZh": "",
+        "noteEn": ""
       },
       {
         "name": "t4",
@@ -101,8 +101,8 @@
         "flip": 20,
         "violation": 0,
         "special": 0,
-        "noteZh": "军师",
-        "noteEn": "military advisor"
+        "noteZh": "",
+        "noteEn": ""
       },
       {
         "name": "t5",
@@ -112,8 +112,8 @@
         "flip": 20,
         "violation": 0,
         "special": 0,
-        "noteZh": "军师",
-        "noteEn": "military advisor"
+        "noteZh": "",
+        "noteEn": ""
       },
       {
         "name": "t6",
@@ -123,8 +123,8 @@
         "flip": 20,
         "violation": 0,
         "special": 0,
-        "noteZh": "军师",
-        "noteEn": "military advisor"
+        "noteZh": "",
+        "noteEn": ""
       }
     ]
   }
