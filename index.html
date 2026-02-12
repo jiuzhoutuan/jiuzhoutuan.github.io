@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title data-i18n data-zh="九州" data-en="Jiuzhou">九州</title>
 
   <link rel="icon" href="assets/logo-mark.png">
   <link rel="apple-touch-icon" href="assets/logo-mark.png">
 
-  <link rel="stylesheet" href="style.css?v=9" />
+  <link rel="stylesheet" href="style.css?v=10" />
 </head>
 
 <body class="page home">
 
-  <!-- 顶部导航：浮在 Banner 上（电脑版更融合，手机也能用） -->
+  <!-- 顶部导航 -->
   <div class="topbar topbar-hero">
     <div class="container topbar-inner">
-      <a class="logo-link" href="index.html" aria-label="回到主页">
+      <a class="logo-link" href="index.html">
         <img class="logo-img" src="assets/logo-nav.png" alt="九州">
       </a>
 
@@ -36,27 +37,36 @@
     </div>
   </div>
 
-  <!-- 电脑版 Banner（手机会隐藏） -->
+  <!-- =====================
+       Desktop Banner
+       ===================== -->
   <header class="hero hero-desktop" style="--hero-img:url('assets/home-banner.png');">
     <div class="hero-inner">
       <div class="hero-vertical">
-        <!-- 中英文都显示中文，不翻译 -->
+        <!-- 始终中文 -->
         <div class="hero-vertical-text">聚九州豪杰，定天下山河</div>
       </div>
-      <div class="hero-center"><!-- 电脑版不要按钮，留空就行 --></div>
+      <div class="hero-center"></div>
     </div>
   </header>
 
-  <!-- 手机版简洁主页（电脑会隐藏） -->
+  <!-- =====================
+       Mobile Home
+       ===================== -->
   <header class="home-simple hero-mobile">
     <div class="container home-simple-inner">
-      <h1 class="home-simple-title">九州</h1>
-      <p class="home-simple-sub">聚九州豪杰，定天下山河</p>
-      <p class="home-simple-hint" data-i18n
-         data-zh="率土之滨 · 九州同盟"
-         data-en="Infinite Borders · Jiuzhou Alliance">
-        率土之滨 · 九州同盟
+
+      <!-- logo-main -->
+      <img class="home-simple-logo" src="assets/logo-main.png" alt="九州">
+
+      <!-- slogan -->
+      <p class="home-simple-sub"
+         data-i18n
+         data-zh="聚九州豪杰，定天下山河"
+         data-en="Gather the finest, and forge a realm worth remembering.">
+         聚九州豪杰，定天下山河
       </p>
+
     </div>
   </header>
 
@@ -67,15 +77,17 @@
         <p class="hint" data-i18n
            data-zh="（这里以后放公告、近期战况、招募信息摘要等）"
            data-en="(Put notices, updates, and recruitment highlights here.)">
-          （这里以后放公告、近期战况、招募信息摘要等）
+           （这里以后放公告、近期战况、招募信息摘要等）
         </p>
       </section>
     </div>
   </main>
 
   <footer class="footer">© 九州</footer>
+
+  <!-- 署名 -->
   <div class="site-signature">九州丨奉孝</div>
 
-  <script src="main.js?v=9" defer></script>
+  <script src="main.js?v=10" defer></script>
 </body>
 </html>
