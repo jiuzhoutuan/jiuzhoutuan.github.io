@@ -7,7 +7,8 @@
 
   <link rel="icon" href="assets/logo-mark.png">
   <link rel="apple-touch-icon" href="assets/logo-mark.png">
-  <link rel="stylesheet" href="style.css?v=5" />
+
+  <link rel="stylesheet" href="style.css?v=6" />
 </head>
 <body class="page">
 
@@ -35,21 +36,42 @@
 
   <main class="main">
     <div class="container">
+
       <section class="card">
         <h1 data-i18n data-zh="成员" data-en="Members">成员</h1>
-        <p class="hint" data-i18n
-           data-zh="成员名单来自 data/members.json。你只改 JSON 就能更新。"
-           data-en="This list is loaded from data/members.json. Update JSON only.">
-          成员名单来自 data/members.json。你只改 JSON 就能更新。
-        </p>
 
-        <div id="members" class="members"></div>
+        <!-- 管理层 -->
+        <h2 class="sub-title" data-i18n data-zh="管理层" data-en="Officers">管理层</h2>
+        <div id="members-officers" class="officer-grid"></div>
+
+        <div class="divider"></div>
+
+        <!-- 普通成员 -->
+        <div class="member-list-header">
+          <span data-i18n data-zh="全部成员" data-en="All Members">全部成员</span>
+          <span class="hint" data-i18n data-zh="（仅展示名字）" data-en="(names only)">(仅展示名字)</span>
+        </div>
+
+        <!-- ✅ 搜索框：只过滤普通成员 -->
+        <div class="controls" style="margin:10px 0 12px;">
+          <input id="mem-search"
+                 class="input"
+                 data-i18n-placeholder
+                 data-zh-placeholder="搜索成员：输入名字（例如 九州丨奉孝）"
+                 data-en-placeholder="Search members: type a name (e.g. 九州丨奉孝)"
+                 placeholder="搜索成员：输入名字（例如 九州丨奉孝）" />
+        </div>
+
+        <div id="members-list" class="member-list"></div>
       </section>
+
     </div>
   </main>
 
   <footer class="footer">© 九州</footer>
-  <script src="main.js?v=5" defer></script>
+
   <div class="site-signature">九州丨奉孝</div>
+
+  <script src="main.js?v=6" defer></script>
 </body>
 </html>

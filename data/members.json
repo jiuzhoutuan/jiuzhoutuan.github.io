@@ -1,6 +1,19 @@
 [
-    {"name":"九州丨奉孝","roleZh":"主力","roleEn":"Core"},
-    {"name":"九州丨子龙","roleZh":"管理","roleEn":"Staff"},
-    {"name":"九州丨嘻嘻","roleZh":"成员","roleEn":"Member"}
-  ]
-  
+  { "name": "九州丨伯符", "roleZh": "团长", "roleEn": "Leader" },
+  { "name": "九州丨公瑾", "roleZh": "副团长 / 积分奖励", "roleEn": "Deputy Leader / Points" },
+  { "name": "九州丨三拳", "roleZh": "管理 / 土地纠纷与惩罚", "roleEn": "Officer / Land & Penalties" },
+  { "name": "九州丨子龙", "roleZh": "管理 / 指挥", "roleEn": "Officer / Commander" },
+
+  { "name": "九州丨奉孝", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨嘻嘻", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨云长", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨翼德", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨元直", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨仲达", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨奉先", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨文远", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨孟德", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨子房", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨幼平", "roleZh": "成员", "roleEn": "Member" },
+  { "name": "九州丨太史慈", "roleZh": "成员", "roleEn": "Member" }
+]

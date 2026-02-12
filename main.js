@@ -84,17 +84,63 @@ async function loadData(){
 // =====================
 // Members Render (optional)
 // =====================
+function isOfficerRole(roleZh="", roleEn=""){
+  const zhKeys = ["团长","副团长","管理","指挥","统战","内政","外交"];
+  const enKeys = ["Leader","Deputy","Officer","Admin","Commander"];
+  return zhKeys.some(k => roleZh.includes(k)) || enKeys.some(k => roleEn.includes(k));
+}
+
 function renderMembers(){
-  const el = document.getElementById("members");
-  if(!el) return;
+  const officerEl = document.getElementById("members-officers");
+  const listEl = document.getElementById("members-list");
+  const searchEl = document.getElementById("mem-search");
+
+  // 如果不是 members 页面，就直接退出
+  if(!officerEl || !listEl) return;
 
   const lang = getLang();
-  el.innerHTML = members.map(m=>`
-    <div class="member">
-      <div class="name">${m.name}</div>
-      <div class="role">${lang==="en"?m.roleEn:m.roleZh}</div>
-    </div>
-  `).join("");
+
+  const officers = [];
+  let normals = [];
+
+  members.forEach(m=>{
+    const roleZh = m.roleZh || "";
+    const roleEn = m.roleEn || "";
+    if(isOfficerRole(roleZh, roleEn)) officers.push(m);
+    else normals.push(m);
+  });
+
+  // 管理层：展示职位
+  officerEl.innerHTML = officers.map(m=>{
+    const roleText = lang==="en" ? (m.roleEn || "") : (m.roleZh || "");
+    return `
+      <div class="officer-card">
+        <div class="officer-name">${m.name || ""}</div>
+        <div class="officer-role">${roleText}</div>
+      </div>
+    `;
+  }).join("");
+
+  // ✅ 搜索：只过滤普通成员
+  const kw = (searchEl?.value || "").trim();
+  if(kw){
+    normals = normals.filter(m => (m.name || "").includes(kw));
+  }
+
+  // 普通成员：仅名字列表
+  normals.sort((a,b)=> (a.name||"").localeCompare(b.name||"", "zh-Hans-CN"));
+
+  listEl.innerHTML = `
+    <ul class="member-ul">
+      ${normals.map(m=>`<li class="member-li">${m.name || ""}</li>`).join("")}
+    </ul>
+  `;
+
+  // ✅ 事件绑定一次
+  if(searchEl && !searchEl.dataset.bind){
+    searchEl.addEventListener("input", renderMembers);
+    searchEl.dataset.bind = "1";
+  }
 }
 
 // =====================
