@@ -548,5 +548,150 @@ body::after{
   background: rgba(0,0,0,.05);
 }
 
+/* ======================
+   Home Hero Banner
+   ====================== */
 
-  
+.home .main{
+  padding-top: 18px; /* hero 下方留一点空间 */
+}
+
+.hero{
+  position: relative;
+  min-height: 86vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background: #f7f7f4;
+  overflow: hidden;
+}
+
+/* 背景图铺满 */
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image: var(--hero-img);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateZ(0);
+}
+
+/* 一层轻微的“宣纸雾化”遮罩，让内容更稳重可读 */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: radial-gradient(80% 70% at 50% 35%,
+    rgba(255,255,255,.55) 0%,
+    rgba(255,255,255,.30) 40%,
+    rgba(255,255,255,.05) 70%,
+    rgba(255,255,255,0) 100%
+  );
+  pointer-events: none;
+}
+
+.hero-inner{
+  position: relative;
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 28px;
+  padding: 92px 0 48px; /* 让内容避开 topbar */
+}
+
+/* 左侧竖排题字区域 */
+.hero-vertical{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-vertical-text{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: .18em;
+  line-height: 1.05;
+  font-weight: 900;
+  font-size: clamp(22px, 2.2vw, 34px);
+
+  /* 毛笔感：用系统中文书法/楷体优先（不走外链字体，国内更稳） */
+  font-family: "STKaiti","Kaiti SC","KaiTi","Songti SC","Noto Serif SC",serif;
+
+  color: rgba(12,12,12,.92);
+  text-shadow: 0 1px 0 rgba(255,255,255,.55);
+  padding: 10px 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.35);
+  border: 1px solid rgba(0,0,0,.08);
+  backdrop-filter: blur(6px);
+}
+
+/* 中心内容（真正居中） */
+.hero-center{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.hero-title{
+  margin: 0;
+  font-size: clamp(42px, 4.6vw, 72px);
+  letter-spacing: .08em;
+  font-weight: 900;
+  color: rgba(0,0,0,.9);
+}
+
+.hero-sub{
+  margin: 10px 0 0;
+  font-size: 14px;
+  opacity: .78;
+  font-weight: 700;
+}
+
+/* 按钮居中 */
+.hero-actions{
+  margin-top: 22px;
+  display:flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 顶部导航与 Banner 融合：透明 + 轻雾化 */
+.topbar-hero{
+  position: fixed;   /* 浮在顶部 */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.40);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+/* 让页面内容不被 fixed topbar 压住（如果你全站都 fixed，可以挪到全局） */
+.home .hero-inner{
+  padding-top: 110px;
+}
+
+/* 移动端：竖排改成横排在上方，避免太挤 */
+@media (max-width: 820px){
+  .hero-inner{
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 100px 0 44px;
+  }
+  .hero-vertical-text{
+    writing-mode: horizontal-tb;
+    letter-spacing: .10em;
+    text-align:center;
+  }
+}
+
+

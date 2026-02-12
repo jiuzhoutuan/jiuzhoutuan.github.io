@@ -3,15 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>九州</title>
+
+  <title data-i18n data-zh="九州" data-en="Jiuzhou">九州</title>
 
   <link rel="icon" href="assets/logo-mark.png">
   <link rel="apple-touch-icon" href="assets/logo-mark.png">
-  <link rel="stylesheet" href="style.css?v=6" />
-</head>
-<body class="page">
 
-  <div class="topbar">
+  <link rel="stylesheet" href="style.css?v=7" />
+</head>
+
+<body class="page home">
+
+  <!-- 顶部导航：浮在 Banner 上 -->
+  <div class="topbar topbar-hero">
     <div class="container topbar-inner">
       <a class="logo-link" href="index.html" aria-label="回到主页">
         <img class="logo-img" src="assets/logo-nav.png" alt="九州">
@@ -33,29 +37,57 @@
     </div>
   </div>
 
-  <section class="hero">
-    <div class="container">
-      <div class="card hero-card">
-        <img class="home-logo" src="assets/logo-main.png" alt="九州团徽">
-
-        <h1 class="brand" data-i18n data-zh="九州" data-en="Jiuzhou">九州</h1>
-        <div class="sub"
-             data-i18n
-             data-zh="率土之滨（Infinite Borders）战盟官网"
-             data-en="Official Alliance Site — Infinite Borders">
-          率土之滨（Infinite Borders）战盟官网
+  <!-- 主页大 Banner -->
+  <header class="hero" style="--hero-img:url('assets/home-banner.png');">
+    <div class="hero-inner">
+      <!-- 竖排毛笔字（主标语） -->
+      <div class="hero-vertical">
+        <div class="hero-vertical-text"
+          data-i18n
+          data-zh="聚九州豪杰，定天下山河"
+          data-en="Gather heroes of the Nine Provinces, and shape the realm.">
+          聚九州豪杰，定天下山河
         </div>
+      </div>
 
-        <div class="cta">
-          <a class="btn primary" href="recruit.html" data-i18n data-zh="查看招募" data-en="Recruitment">查看招募</a>
-          <a class="btn" href="journey.html" data-i18n data-zh="九州征程" data-en="Journey">九州征程</a>
+      <!-- 中心内容（按钮居中） -->
+      <div class="hero-center">
+        <h1 class="hero-title" data-i18n data-zh="九州" data-en="Jiuzhou">九州</h1>
+        <p class="hero-sub" data-i18n
+           data-zh="率土之滨 · 九州同盟"
+           data-en="Infinite Borders · Jiuzhou Alliance">
+          率土之滨 · 九州同盟
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="recruit.html"
+             data-i18n data-zh="加入我们" data-en="Join Us">加入我们</a>
+          <a class="btn" href="journey.html"
+             data-i18n data-zh="查看征程" data-en="Our Journey">查看征程</a>
         </div>
       </div>
     </div>
-  </section>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <!-- 你原本主页下方的内容可以继续放这里 -->
+      <section class="card">
+        <h2 data-i18n data-zh="公告" data-en="Notice">公告</h2>
+        <p class="hint" data-i18n
+           data-zh="（这里以后放公告、近期战况、招募信息摘要等）"
+           data-en="(Put notices, updates, and recruitment highlights here.)">
+          （这里以后放公告、近期战况、招募信息摘要等）
+        </p>
+      </section>
+    </div>
+  </main>
 
   <footer class="footer">© 九州</footer>
-  <script src="main.js?v=6" defer></script>
+
+  <!-- 隐蔽署名 -->
   <div class="site-signature">九州丨奉孝</div>
+
+  <script src="main.js?v=7" defer></script>
 </body>
 </html>
