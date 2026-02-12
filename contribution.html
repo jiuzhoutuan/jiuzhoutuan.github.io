@@ -7,7 +7,7 @@
 
   <link rel="icon" href="assets/logo-mark.png">
   <link rel="apple-touch-icon" href="assets/logo-mark.png">
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body class="page">
 
@@ -52,22 +52,24 @@
                  placeholder="搜索：输入你的游戏名（例如 九州丨奉孝）" />
         </div>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th data-i18n data-zh="成员" data-en="Member">成员</th>
-              <th data-i18n data-zh="铺路" data-en="Road">铺路</th>
-              <th data-i18n data-zh="城池" data-en="City">城池</th>
-              <th data-i18n data-zh="武勋" data-en="Merit">武勋</th>
-              <th data-i18n data-zh="翻地" data-en="Flip">翻地</th>
-              <th data-i18n data-zh="违规" data-en="Violation">违规</th>
-              <th data-i18n data-zh="特殊奖励" data-en="Special">特殊奖励</th>
-              <th data-i18n data-zh="总积分" data-en="Total">总积分</th>
-              <th data-i18n data-zh="备注" data-en="Note">备注</th>
-            </tr>
-          </thead>
-          <tbody id="con-body"></tbody>
-        </table>
+        <div class="table-scroll">
+          <table class="table">
+            <thead>
+              <tr>
+                <th data-i18n data-zh="成员" data-en="Member">成员</th>
+                <th data-i18n data-zh="铺路" data-en="Road">铺路</th>
+                <th data-i18n data-zh="城池" data-en="City">城池</th>
+                <th data-i18n data-zh="武勋" data-en="Merit">武勋</th>
+                <th data-i18n data-zh="翻地" data-en="Flip">翻地</th>
+                <th data-i18n data-zh="违规" data-en="Violation">违规</th>
+                <th data-i18n data-zh="特殊奖励" data-en="Special">特殊奖励</th>
+                <th data-i18n data-zh="总积分" data-en="Total">总积分</th>
+                <th data-i18n data-zh="备注" data-en="Note">备注</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        
 
         <p class="hint" data-i18n
            data-zh="说明：此页展示为“明细汇总”，总积分为各项相加（含负分）。"

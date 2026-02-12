@@ -59,6 +59,72 @@
         "special": 0,
         "noteZh": "军师",
         "noteEn": "military advisor"
+      },
+      {
+        "name": "t1",
+        "road": 10,
+        "city": 7,
+        "merit": 1,
+        "flip": 20,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "军师",
+        "noteEn": "military advisor"
+      },
+      {
+        "name": "t2",
+        "road": 10,
+        "city": 7,
+        "merit": 2,
+        "flip": 20,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "军师",
+        "noteEn": "military advisor"
+      },
+      {
+        "name": "t3",
+        "road": 10,
+        "city": 7,
+        "merit": 3,
+        "flip": 20,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "军师",
+        "noteEn": "military advisor"
+      },
+      {
+        "name": "t4",
+        "road": 10,
+        "city": 7,
+        "merit": 4,
+        "flip": 20,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "军师",
+        "noteEn": "military advisor"
+      },
+      {
+        "name": "t5",
+        "road": 10,
+        "city": 7,
+        "merit": 4,
+        "flip": 20,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "军师",
+        "noteEn": "military advisor"
+      },
+      {
+        "name": "t6",
+        "road": 10,
+        "city": 7,
+        "merit": 6,
+        "flip": 20,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "军师",
+        "noteEn": "military advisor"
       }
     ]
   }

@@ -429,3 +429,29 @@ body::after{
   );
 }
 
+/* ======================
+   贡献表格：局部滚动（约10行）
+   ====================== */
+   .table-scroll{
+    max-height: 520px;          /* 约10行左右，你觉得高/低我再调 */
+    overflow: auto;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.82);
+  }
+  
+  /* 让 table 自己不再负责外框 */
+  .table{
+    border: none;
+    border-radius: 0;
+  }
+  
+  /* 表头固定，滚动时不丢列名 */
+  .table thead th{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: rgba(245,245,242,.95);
+    backdrop-filter: blur(6px);
+  }
+  
