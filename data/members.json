@@ -8,8 +8,9 @@
   { "name": "九州丨白杆", "roleZh": "管理", "roleEn": "Officer" },
   { "name": "马德里阿隆索", "roleZh": "管理", "roleEn": "Officer" },
 
+  { "name": "九州丨文和", "roleZh": "铺路队", "roleEn": "Road Team" },
+
   { "name": "九州丨子龙", "roleZh": "成员", "roleEn": "Member" },
-  { "name": "九州丨文和", "roleZh": "成员", "roleEn": "Member" },
   { "name": "水火绝义", "roleZh": "成员", "roleEn": "Member" },
   { "name": "九州丨凉初", "roleZh": "成员", "roleEn": "Member" },
   { "name": "九州丨子诺婷", "roleZh": "成员", "roleEn": "Member" },
