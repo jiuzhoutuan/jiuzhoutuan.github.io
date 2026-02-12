@@ -920,11 +920,6 @@ body::after{
   }
 }
 
-/* ===== 铺路队：淡蓝色底座 ===== */
-.sub-blue{
-  color: rgba(40,80,140,.85);
-}
-
 /* ===== Timeline ===== */
 .timeline{
   list-style:none;
@@ -952,13 +947,26 @@ body::after{
   font-weight:700;
 }
 
-/* 铺路队：卡片布局和管理层一致（不要整行拉满） */
-.officer-blue{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 14px;
-  margin-top:12px;
+/* ===== 铺路队：淡蓝色底座 ===== */
+.sub-blue{
+  color: rgba(40,80,140,.85);
 }
+
+/* 铺路队：用 flex，让卡片宽度跟管理层一样，不会被拉满整行 */
+.officer-blue{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 12px;
+  align-items: stretch;
+}
+
+/* 铺路队：固定卡片宽度（你可以调 220/240） */
+.officer-blue .officer-card{
+  flex: 0 0 220px;   /* 固定宽度 */
+  max-width: 220px;
+}
+
 
 /* 铺路队：底座条改成淡蓝色（覆盖管理层的印泥红） */
 .officer-blue .officer-card::after{
