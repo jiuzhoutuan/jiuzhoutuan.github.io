@@ -98,7 +98,7 @@ function renderMembers(){
 }
 
 // =====================
-// Contribution Render (new)
+// Contribution Render
 // =====================
 function safeNum(x){
   const n = Number(x);
@@ -160,23 +160,28 @@ function renderContribution(){
 
   const keyword = searchInput.value.trim();
 
-  // 计算总分并排序（先不做制度推导，只做展示+合计）
+  // 计算总分
   const computed = season.records.map(r=>({
     ...r,
     total: calcTotal(r),
   }));
 
-  // 默认按总积分降序（你们后续制度改了也不影响）
+  // ✅ 全体排序（总积分降序）
   computed.sort((a,b)=>b.total - a.total);
 
+  // ✅ 先把“全体Top3名单”固定下来（不受搜索影响）
+  const top3Names = new Set(
+    computed.slice(0,3).map(r => r.name || "")
+  );
+
+  // 再做搜索过滤（搜索只影响显示，不影响Top3归属）
   const filtered = computed.filter(r=>!keyword || (r.name || "").includes(keyword));
 
-  body.innerHTML = filtered.map((r, idx)=>{
+  body.innerHTML = filtered.map(r=>{
     const note = lang==="en" ? (r.noteEn || "") : (r.noteZh || "");
     const v = safeNum(r.violation);
-    const rank = idx + 1;
-    const topClass = rank <= 3 ? "top3" : "";
-  
+    const topClass = top3Names.has(r.name || "") ? "top3" : "";
+
     return `
       <tr class="${topClass}">
         <td>${r.name || ""}</td>

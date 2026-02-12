@@ -5,14 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title data-i18n data-zh="九州｜贡献" data-en="Jiuzhou | Contribution">九州｜贡献</title>
 
+  <!-- Tab 图标：用“九” -->
   <link rel="icon" href="assets/logo-mark.png">
   <link rel="apple-touch-icon" href="assets/logo-mark.png">
-  <link rel="stylesheet" href="style.css?v=4" />
+
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body class="page">
 
+  <!-- Topbar -->
   <div class="topbar">
     <div class="container topbar-inner">
+      <!-- 左上角回主页：骑兵图 -->
       <a class="logo-link" href="index.html" aria-label="回到主页">
         <img class="logo-img" src="assets/logo-nav.png" alt="九州">
       </a>
@@ -36,22 +40,26 @@
   <main class="main">
     <div class="container">
 
-      <!-- 查询与积分明细 -->
+      <!-- 贡献明细 -->
       <section class="card">
         <h1 data-i18n data-zh="贡献明细" data-en="Contribution Breakdown">贡献明细</h1>
-        <p class="hint" id="con-archive-hint"></p>
 
         <div class="controls" style="margin:12px 0;">
-          <select id="con-season" class="select"></select>
+          <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap;">
+            <select id="con-season" class="select"></select>
+            <span id="con-archive-hint" class="hint" style="margin:0;"></span>
+          </div>
 
           <input id="con-search"
                  class="input"
+                 style="min-width:280px;"
                  data-i18n-placeholder
                  data-zh-placeholder="搜索：输入你的游戏名（例如 九州丨奉孝）"
                  data-en-placeholder="Search: enter your in-game name (e.g. 九州丨奉孝)"
                  placeholder="搜索：输入你的游戏名（例如 九州丨奉孝）" />
         </div>
 
+        <!-- ✅ 表格局部滚动容器（默认约 10 行） -->
         <div class="table-scroll">
           <table class="table">
             <thead>
@@ -67,19 +75,25 @@
                 <th data-i18n data-zh="备注" data-en="Note">备注</th>
               </tr>
             </thead>
+            <tbody id="con-body"></tbody>
           </table>
         </div>
-        
 
         <p class="hint" data-i18n
-           data-zh="说明：此页展示为“明细汇总”，总积分为各项相加（含负分）。"
-           data-en="Note: This page shows the season breakdown. Total is the sum of all fields (including negative points).">
-          说明：此页展示为“明细汇总”，总积分为各项相加（含负分）。
+           data-zh="说明：默认按总积分从高到低排序；前三名会有浅金色底纹。"
+           data-en="Note: Sorted by total points (high → low). Top 3 are highlighted in subtle gold.">
+          说明：默认按总积分从高到低排序；前三名会有浅金色底纹。
         </p>
+
+        <!-- 如果你要一键跳到规则 -->
+        <div style="margin-top:10px;">
+          <a class="btn" href="#rules"
+             data-i18n data-zh="跳到积分规则" data-en="Jump to rules">跳到积分规则</a>
+        </div>
       </section>
 
-      <!-- 积分规则（完整展示） -->
-      <section class="card">
+      <!-- 积分规则 -->
+      <section class="card" id="rules">
         <h2 data-i18n data-zh="积分规则（公示）" data-en="Scoring Rules (Public)">积分规则（公示）</h2>
 
         <h3 data-i18n data-zh="一、铺路任务积分" data-en="1) Road-building Tasks">一、铺路任务积分</h3>
@@ -91,7 +105,7 @@
           </li>
           <li data-i18n
               data-zh="战时：同上，但积分翻倍（处于“战时状态”下，本节所有积分翻倍）。"
-              data-en="Wartime: Same as above but doubled (all points in this section are doubled in Wartime).">
+              data-en="Wartime: same rules but doubled (all points in this section are doubled during Wartime).">
             战时：同上，但积分翻倍（处于“战时状态”下，本节所有积分翻倍）。
           </li>
         </ul>
@@ -129,7 +143,7 @@
           <li data-i18n data-zh="翻5级以下土地：1分/块" data-en="Flip land below Lv5: 1 point per tile">翻5级以下土地：1分/块</li>
           <li data-i18n data-zh="翻5级及以上土地：2分/块" data-en="Flip land Lv5+: 2 points per tile">翻5级及以上土地：2分/块</li>
           <li data-i18n data-zh="拆除普通要塞：5分/座" data-en="Destroy normal fort: 5 points each">拆除普通要塞：5分/座</li>
-          <li data-i18n data-zh="拆除高级要塞：10分/座" data-en="Destroy advanced fort: 10 points each">拆除高级要塞：10分/座</li>
+          <li data-i18n data-zh="拆除高级要塞：10分/座" data-en="Destroy advanced fort: 10 points each">拆除高级 fort: 10 points each</li>
         </ul>
 
         <h3 data-i18n data-zh="五、违规扣分" data-en="5) Penalties">五、违规扣分</h3>
@@ -147,18 +161,14 @@
 
         <h3 data-i18n data-zh="六、特殊贡献奖励" data-en="6) Special Rewards">六、特殊贡献奖励</h3>
         <ul>
-          <li data-i18n
-              data-zh="沦陷飞地（当机场）：+20（战时+40）"
-              data-en="Airport (sacrificed exclave): +20 (wartime +40)">
-            沦陷飞地（当机场）：+20（战时+40）
-          </li>
+          <li data-i18n data-zh="沦陷飞地（当机场）：+20（战时+40）" data-en="Airport (sacrificed exclave): +20 (wartime +40)">沦陷飞地（当机场）：+20（战时+40）</li>
           <li data-i18n data-zh="主城堵路：+50" data-en="Main city road block: +50">主城堵路：+50</li>
         </ul>
 
         <p class="hint" data-i18n
-           data-zh="“战时状态”由同盟指挥部通过邮件正式公告界定。积分定期公示一次。"
-           data-en="Wartime status is officially announced via in-game mail. Points are published periodically.">
-          “战时状态”由同盟指挥部通过邮件正式公告界定。积分定期公示一次。
+           data-zh="“战时状态”由同盟指挥部通过邮件正式公告界定；积分定期公示一次。"
+           data-en="Wartime status is officially announced via in-game mail; points are published periodically.">
+          “战时状态”由同盟指挥部通过邮件正式公告界定；积分定期公示一次。
         </p>
       </section>
 
@@ -166,6 +176,10 @@
   </main>
 
   <footer class="footer">© 九州</footer>
+
+  <!-- 隐蔽署名（如果你已经全站加过就删这行，避免重复） -->
+  <div class="site-signature">九州丨奉孝</div>
+
   <script src="main.js?v=4" defer></script>
 </body>
 </html>

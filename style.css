@@ -429,29 +429,40 @@ body::after{
   );
 }
 
-/* ======================
-   贡献表格：局部滚动（约10行）
-   ====================== */
-   .table-scroll{
-    max-height: 520px;          /* 约10行左右，你觉得高/低我再调 */
-    overflow: auto;
-    border-radius: 16px;
-    border: 1px solid var(--line);
-    background: rgba(255,255,255,.82);
-  }
-  
-  /* 让 table 自己不再负责外框 */
-  .table{
-    border: none;
-    border-radius: 0;
-  }
-  
-  /* 表头固定，滚动时不丢列名 */
-  .table thead th{
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    background: rgba(245,245,242,.95);
-    backdrop-filter: blur(6px);
-  }
+/* 表格局部滚动（约10行） */
+.table-scroll{
+  max-height: 520px;
+  overflow: auto;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.82);
+}
+.table{
+  border: none;
+  border-radius: 0;
+}
+.table thead th{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(245,245,242,.95);
+  backdrop-filter: blur(6px);
+}
+
+/* Top3 浅金高亮 */
+.table tr.top3 td{
+  background: linear-gradient(90deg,
+    rgba(216,182,106,.22),
+    rgba(216,182,106,.10),
+    rgba(216,182,106,.02)
+  );
+}
+.table tr.top3:hover td{
+  background: linear-gradient(90deg,
+    rgba(216,182,106,.26),
+    rgba(216,182,106,.14),
+    rgba(216,182,106,.04)
+  );
+}
+
   
