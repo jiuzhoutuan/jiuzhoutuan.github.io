@@ -3,25 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title data-i18n data-zh="九州｜成员" data-en="Jiuzhou | Members">九州｜成员</title>
 
   <link rel="icon" href="assets/logo-mark.png">
   <link rel="apple-touch-icon" href="assets/logo-mark.png">
 
-  <link rel="stylesheet" href="style.css?v=11" />
+  <link rel="stylesheet" href="style.css?v=12" />
 </head>
+
 <body class="page">
 
+  <!-- Topbar -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <a class="logo-link" href="index.html" aria-label="回到主页">
+      <a class="logo-link" href="index.html">
         <img class="logo-img" src="assets/logo-nav.png" alt="九州">
       </a>
 
       <div class="nav">
         <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
         <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
-        <a href="members.html" data-i18n data-zh="成员" data-en="Members">成员</a>
+        <a href="members.html" class="active" data-i18n data-zh="成员" data-en="Members">成员</a>
         <a href="journey.html" data-i18n data-zh="征程" data-en="Journey">征程</a>
         <a href="contribution.html" data-i18n data-zh="贡献" data-en="Contribution">贡献</a>
         <a href="redeem.html" data-i18n data-zh="兑换" data-en="Redeem">兑换</a>
@@ -46,32 +49,38 @@
 
         <div class="divider"></div>
 
+        <!-- 铺路队 -->
+        <h2 class="sub-title sub-blue" data-i18n data-zh="铺路队" data-en="Road Team">铺路队</h2>
+        <div id="members-roadteam" class="officer-grid officer-blue"></div>
+
+        <div class="divider"></div>
+
         <!-- 普通成员 -->
         <div class="member-list-header">
           <span data-i18n data-zh="全部成员" data-en="All Members">全部成员</span>
-          <span class="hint" data-i18n data-zh="（仅展示名字）" data-en="(names only)">(仅展示名字)</span>
+          <span class="hint" data-i18n data-zh="（仅展示名字）" data-en="(names only)">
+            （仅展示名字）
+          </span>
         </div>
 
-        <!-- ✅ 搜索框：只过滤普通成员 -->
         <div class="controls" style="margin:10px 0 12px;">
           <input id="mem-search"
                  class="input"
                  data-i18n-placeholder
-                 data-zh-placeholder="搜索成员：输入名字（例如 九州丨奉孝）"
-                 data-en-placeholder="Search members: type a name (e.g. 九州丨奉孝)"
-                 placeholder="搜索成员：输入名字（例如 九州丨奉孝）" />
+                 data-zh-placeholder="搜索成员名字"
+                 data-en-placeholder="Search member name" />
         </div>
 
         <div id="members-list" class="member-list"></div>
+
       </section>
 
     </div>
   </main>
 
   <footer class="footer">© 九州</footer>
-
   <div class="site-signature">九州丨奉孝</div>
 
-  <script src="main.js?v=11" defer></script>
+  <script src="main.js?v=12" defer></script>
 </body>
 </html>

@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title data-i18n data-zh="九州｜征程" data-en="Jiuzhou | Journey">九州｜征程</title>
 
   <link rel="icon" href="assets/logo-mark.png">
   <link rel="apple-touch-icon" href="assets/logo-mark.png">
-  <link rel="stylesheet" href="style.css?v=11" />
+
+  <link rel="stylesheet" href="style.css?v=12" />
 </head>
+
 <body class="page">
 
   <div class="topbar">
     <div class="container topbar-inner">
-      <a class="logo-link" href="index.html" aria-label="回到主页">
+      <a class="logo-link" href="index.html">
         <img class="logo-img" src="assets/logo-nav.png" alt="九州">
       </a>
 
@@ -21,7 +24,7 @@
         <a href="recruit.html" data-i18n data-zh="招募" data-en="Recruitment">招募</a>
         <a href="rules.html" data-i18n data-zh="团规" data-en="Rules">团规</a>
         <a href="members.html" data-i18n data-zh="成员" data-en="Members">成员</a>
-        <a href="journey.html" data-i18n data-zh="征程" data-en="Journey">征程</a>
+        <a href="journey.html" class="active" data-i18n data-zh="征程" data-en="Journey">征程</a>
         <a href="contribution.html" data-i18n data-zh="贡献" data-en="Contribution">贡献</a>
         <a href="redeem.html" data-i18n data-zh="兑换" data-en="Redeem">兑换</a>
       </div>
@@ -35,27 +38,56 @@
 
   <main class="main">
     <div class="container">
-      <section class="card">
-        <h1 data-i18n data-zh="征程" data-en="Journey">征程</h1>
-        <p data-i18n
-           data-zh="这里记录九州一路走来的经历：落州、破关、会战、逆风翻盘、赛季荣誉……后面你把素材发我，我帮你排成时间轴（很帅）。"
-           data-en="Document Jiuzhou’s history here: regions, major battles, comebacks, season honours. Send me your notes later and I’ll format it into a clean timeline.">
-          这里记录九州一路走来的经历：落州、破关、会战、逆风翻盘、赛季荣誉……后面你把素材发我，我帮你排成时间轴（很帅）。
-        </p>
-      </section>
 
       <section class="card">
-        <h2 data-i18n data-zh="（占位）赛季记录" data-en="(Placeholder) Seasons">（占位）赛季记录</h2>
-        <ul>
-          <li data-i18n data-zh="S2-2026：这里写一句总结" data-en="S2-2026: one-line summary here">S2-2026：这里写一句总结</li>
-          <li data-i18n data-zh="S1-2026：这里写一句总结" data-en="S1-2026: one-line summary here">S1-2026：这里写一句总结</li>
+        <h1 data-i18n data-zh="九州征程" data-en="The Journey of Jiuzhou">九州征程</h1>
+
+        <ul class="timeline">
+          <li>
+            <span class="date">26 / 12 / 2025</span>
+            <p data-i18n
+               data-zh="九州同盟成立"
+               data-en="Jiuzhou Alliance was founded">
+               九州同盟成立
+            </p>
+          </li>
+
+          <li>
+            <span class="date">26 / 12 / 2025</span>
+            <p data-i18n
+               data-zh="九州开启 S1 赛季，GLO238 区"
+               data-en="Jiuzhou entered Season 1 on GLO238">
+               九州开启 S1 赛季，GLO238 区
+            </p>
+          </li>
+
+          <li>
+            <span class="date">07 / 02 / 2026</span>
+            <p data-i18n
+               data-zh="九州官方网站建立"
+               data-en="Jiuzhou official website launched">
+               九州官方网站建立
+            </p>
+          </li>
+
+          <li>
+            <span class="date">13 / 02 / 2026</span>
+            <p data-i18n
+               data-zh="九州开启 S1 赛季结算征服，同盟：月见皇朝"
+               data-en="Jiuzhou Season 1 finish, result: conquest, allies: 月见皇朝">
+               九州开启 S2 赛季征程
+            </p>
+          </li>
         </ul>
+
       </section>
+
     </div>
   </main>
 
   <footer class="footer">© 九州</footer>
-  <script src="main.js?v=11" defer></script>
   <div class="site-signature">九州丨奉孝</div>
+
+  <script src="main.js?v=12" defer></script>
 </body>
 </html>
