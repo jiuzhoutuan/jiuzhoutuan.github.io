@@ -9,6 +9,7 @@
   { "name": "马德里阿隆索", "roleZh": "管理", "roleEn": "Officer" },
 
   { "name": "九州丨文和", "roleZh": "铺路队", "roleEn": "Road Team" },
+  { "name": "Volcan", "roleZh": "铺路队", "roleEn": "Road Team" },
 
   { "name": "九州丨子龙", "roleZh": "成员", "roleEn": "Member" },
   { "name": "水火绝义", "roleZh": "成员", "roleEn": "Member" },
@@ -35,7 +36,6 @@
   { "name": "没有80", "roleZh": "成员", "roleEn": "Member" },
   { "name": "裁决丨橙子", "roleZh": "成员", "roleEn": "Member" },
   { "name": "浪人", "roleZh": "成员", "roleEn": "Member" },
-  { "name": "Volcan", "roleZh": "成员", "roleEn": "Member" },
   { "name": "来都来了", "roleZh": "成员", "roleEn": "Member" }
 
 ]
