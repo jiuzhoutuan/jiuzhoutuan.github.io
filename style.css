@@ -955,8 +955,9 @@ body::after{
 /* 铺路队：卡片布局和管理层一致（不要整行拉满） */
 .officer-blue{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top:12px;
 }
 
 /* 铺路队：底座条改成淡蓝色（覆盖管理层的印泥红） */
