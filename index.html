@@ -3,18 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title data-i18n data-zh="九州" data-en="Jiuzhou">九州</title>
 
   <link rel="icon" href="assets/logo-mark.png">
   <link rel="apple-touch-icon" href="assets/logo-mark.png">
 
-  <link rel="stylesheet" href="style.css?v=8" />
+  <link rel="stylesheet" href="style.css?v=9" />
 </head>
 
 <body class="page home">
 
-  <!-- 顶部导航：浮在 Banner 上 -->
+  <!-- 顶部导航：浮在 Banner 上（电脑版更融合，手机也能用） -->
   <div class="topbar topbar-hero">
     <div class="container topbar-inner">
       <a class="logo-link" href="index.html" aria-label="回到主页">
@@ -37,29 +36,32 @@
     </div>
   </div>
 
-  <!-- 主页大 Banner -->
-  <header class="hero" style="--hero-img:url('assets/home-banner.png');">
+  <!-- 电脑版 Banner（手机会隐藏） -->
+  <header class="hero hero-desktop" style="--hero-img:url('assets/home-banner.png');">
     <div class="hero-inner">
-  
-      <!-- 左侧竖排题字（始终中文，不翻译） -->
       <div class="hero-vertical">
+        <!-- 中英文都显示中文，不翻译 -->
         <div class="hero-vertical-text">聚九州豪杰，定天下山河</div>
       </div>
-  
-      <!-- 中心：只留两个按钮（真正居中） -->
-      <div class="hero-center">
-        <div class="hero-actions hero-actions-center">
-          <a class="btn btn-primary" href="recruit.html" data-i18n data-zh="加入我们" data-en="Join Us">加入我们</a>
-          <a class="btn" href="journey.html" data-i18n data-zh="查看征程" data-en="Our Journey">查看征程</a>
-        </div>
-      </div>
-  
+      <div class="hero-center"><!-- 电脑版不要按钮，留空就行 --></div>
     </div>
-  </header>  
+  </header>
+
+  <!-- 手机版简洁主页（电脑会隐藏） -->
+  <header class="home-simple hero-mobile">
+    <div class="container home-simple-inner">
+      <h1 class="home-simple-title">九州</h1>
+      <p class="home-simple-sub">聚九州豪杰，定天下山河</p>
+      <p class="home-simple-hint" data-i18n
+         data-zh="率土之滨 · 九州同盟"
+         data-en="Infinite Borders · Jiuzhou Alliance">
+        率土之滨 · 九州同盟
+      </p>
+    </div>
+  </header>
 
   <main class="main">
     <div class="container">
-      <!-- 你原本主页下方的内容可以继续放这里 -->
       <section class="card">
         <h2 data-i18n data-zh="公告" data-en="Notice">公告</h2>
         <p class="hint" data-i18n
@@ -72,10 +74,8 @@
   </main>
 
   <footer class="footer">© 九州</footer>
-
-  <!-- 隐蔽署名 -->
   <div class="site-signature">九州丨奉孝</div>
 
-  <script src="main.js?v=8" defer></script>
+  <script src="main.js?v=9" defer></script>
 </body>
 </html>
