@@ -26,6 +26,39 @@
         "special": 0,
         "noteZh": "",
         "noteEn": ""
+      },
+      {
+        "name": "九州丨伯符",
+        "road": 10,
+        "city": 7,
+        "merit": 50,
+        "flip": 6,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "找不到人",
+        "noteEn": "404 not found"
+      },
+      {
+        "name": "九州丨公瑾",
+        "road": 10,
+        "city": 7,
+        "merit": 70,
+        "flip": 6,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "喜欢吃城皮",
+        "noteEn": "likes to eat city walls"
+      },
+      {
+        "name": "九州丨三拳",
+        "road": 10,
+        "city": 7,
+        "merit": 30,
+        "flip": 20,
+        "violation": 0,
+        "special": 0,
+        "noteZh": "军师",
+        "noteEn": "military advisor"
       }
     ]
   }
