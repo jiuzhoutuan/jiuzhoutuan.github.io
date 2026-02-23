@@ -190,6 +190,7 @@ function calcTotal(r){
     safeNum(r.city) +
     safeNum(r.merit) +
     safeNum(r.flip) +
+    safeNum(r.demolition) +
     safeNum(r.violation) +
     safeNum(r.special)
   );
@@ -256,6 +257,7 @@ function renderContribution(){
         <td>${safeNum(r.city)}</td>
         <td>${safeNum(r.merit)}</td>
         <td>${safeNum(r.flip)}</td>
+        <td>${safeNum(r.demolition)}</td>
         <td style="${v<0 ? "color:rgba(178,31,31,.9);font-weight:700;" : ""}">${v}</td>
         <td>${safeNum(r.special)}</td>
         <td style="font-weight:800;">${r.total}</td>
