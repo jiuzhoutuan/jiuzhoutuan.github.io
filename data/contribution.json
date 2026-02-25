@@ -12,13 +12,13 @@
       { "name": "九州丨明昊", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨白杆", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨金子", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 13, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
-      { "name": "九州丨奉先", "road": 0, "city": 5, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
+      { "name": "九州丨奉先", "road": 0, "city": 5, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "上将潘凤", "noteEn": "Pan Feng" },
       { "name": "九州丨阿隆索", "road": 0, "city": 24, "merit": 0, "flip": 0, "demolition": 13, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨不败", "road": 0, "city": 14, "merit": 0, "flip": 0, "demolition": 12, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨奉孝", "road": 0, "city": 28, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨火山", "road": 0, "city": 32, "merit": 0, "flip": 0, "demolition": 16, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨状元", "road": 0, "city": 5, "merit": 0, "flip": 0, "demolition": 6, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
-      { "name": "九州丨苹果君", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 6, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
+      { "name": "九州丨苹洲君", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 6, "violation": 0, "special": 0, "noteZh": "gay果", "noteEn": "gay fruit" },
       { "name": "九州丨仲康", "road": 0, "city": 24, "merit": 0, "flip": 0, "demolition": 12, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨筑紫麻暑", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 6, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨文长", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
@@ -43,7 +43,7 @@
       { "name": "汉高祖", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨莫慌", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨文若", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
-      { "name": "九州丨玄武", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
+      { "name": "九州丨玄武", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "成都人", "noteEn": "ChengDu citizen" },
       { "name": "九州丨峨眉峰", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "九州丨汉中王", "road": 15, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "晚晚晚", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
@@ -75,7 +75,7 @@
       { "name": "九州丨幼儿园班长", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "番茄", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
       { "name": "十斗", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
-      { "name": "九州丨杜康", "road": 0, "city": 0, "merit": 0, "flip": 10, "demolition": 0, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" },
+      { "name": "九州丨杜康", "road": 0, "city": 0, "merit": 0, "flip": 10, "demolition": 0, "violation": 0, "special": 0, "noteZh": "黑子", "noteEn": "hater" },
       { "name": "九州丨无极", "road": 0, "city": 0, "merit": 0, "flip": 0, "demolition": 3, "violation": 0, "special": 0, "noteZh": "", "noteEn": "" }
     ]
   }
